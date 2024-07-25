@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-FD</title>
+
+    <!--Fontes-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles ICTSS -->
+    <!-- Setting -->
+    <link rel="stylesheet" href="style/settings/wrapper.css" />
+    <link rel="stylesheet" href="style/settings/core.css" />
+    <link rel="stylesheet" href="style/settings/color.css" />
+    <link rel="stylesheet" href="style/settings/text.css" />
+
+    <!-- Generic -->
+    <link rel="stylesheet" href="style/generic/reset.css" />
+    <link rel="stylesheet" href="style/generic/box-sizing.css" />
+
+    <!-- Base-->
+    <link rel="stylesheet" href="style/base/html.css" />
+
+    <!-- Objects -->
+    <link rel="stylesheet" href="style/objects/fd-wraper.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="style/components/fd-button.css" />
+    <link rel="stylesheet" href="style/components/fd-input.css" />
+    <link rel="stylesheet" href="style/components/fd-radio.css" />
+    <link rel="stylesheet" href="style/components/fd-header.css" />
+    <!-- Pages -->
+    <link rel="stylesheet" href="style/pages/login.css" />
+    <!-- Trumps -->
+    <link rel="stylesheet" href="style/trumps/" />
+
+    <!--Script-->
+    <script src="script/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="fd-login">
+      <div class="fd-wrapper">
+        <header class="fd-header">
+          <div class="wrapper">
+            <div class="image-wrapper">
+              <img
+                alt="logo"
+                class="image"
+                src="assets/SoftawareDeveloper.png"
+              />
+            </div>
+          </div>
+        </header>
+
+        <main class="main-content">
+          <form class="left" onsubmit="cadastrar()" action="javascript:void(0)">
+            <h1 class="main-title">
+              <span class="up"> Olá!</span>
+              <span class="down">Vamos criar seu cadastro.</span>
+            </h1>
+
+            <div class="radio-buttons">
+              <h3 class="title">Qual o seu perfil?</h3>
+              <div class="buttons">
+                <label class="fd-radio" for="cargo">Dev</label>
+                <input name="cargo" type="radio" />
+
+                <label class="fd-radio" for="cargo">Cliente</label>
+                <input name="cargo" type="radio" />
+              </div>
+            </div>
+
+            <input
+              required
+              id="fullname"
+              class="fd-input"
+              placeholder="Nome Completo"
+            />
+            <input
+              required
+              id="birtdate"
+              type="date"
+              class="fd-input"
+              placeholder="Data Nascimento"
+            />
+            <input
+              required
+              id="email"
+              type="email"
+              class="fd-input"
+              placeholder="Email"
+            />
+            <input
+              required
+              id="password"
+              type="password"
+              class="fd-input"
+              placeholder="Senha"
+            />
+
+            <button class="fd-button" type="submit">Continuar</button>
+          </form>
+
+          <div class="right">
+            <img class="imagelateral" src="assets/telaprincipal.png" />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

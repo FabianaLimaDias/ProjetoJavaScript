@@ -1,0 +1,17 @@
+.fd-project-create-edit > .fd-wrapper > .main-content > .left > .main-title {
+  font-family: var(--fd-font-size-base);
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 415px;
+  margin-bottom: 40px;
+  margin-top: -300px;
+}
+
+f.d-project-create-edit > .fd-wrapper > .main-content > .left > .fd-buttom {
+  margin-top: 30px;
+}
+
+.fd-project-create-edit > .fd-wrapper > .main-content > .left {
+  margin: auto;
+  max-width: 300px;
+}

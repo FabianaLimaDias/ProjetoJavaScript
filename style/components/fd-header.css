@@ -1,0 +1,73 @@
+.fd-header {
+  height: var(--fd-header-size);
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.fd-header > .wrapper {
+  max-width: var(--fd-main-wrapper);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.fd-header > .wrapper.-has-user {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+/*logo*/
+
+.fd-header > .wrapper > .image-wrapper {
+  height: var(--fd-header-size);
+  padding: 16px 0;
+}
+
+.fd-header > .wrapper > .image-wrapper > .image {
+  height: 100%;
+}
+
+/*Usuario*/
+.fd-header > .wrapper > .user {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.fd-header > .wrapper > .user > .info {
+  text-align: right;
+}
+
+.fd-header > .wrapper > .user > .info > .name {
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 10px;
+  font-family: var(--fd-font-size-base);
+  display: block;
+}
+
+.fd-header > .wrapper > .user > .info > .role {
+  font-weight: 500;
+  font-size: 9px;
+  font-family: var(--fd-font-size-base);
+  display: block;
+}
+
+.fd-header > .wrapper > .user > .photo-wrapper {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--fd-color-primary);
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.fd-header > .wrapper > .user > .photo-wrapper > img {
+  height: 100%;
+  right: 100%;
+}

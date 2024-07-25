@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create-FD</title>
+
+    <!--Fontes-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Styles ICTSS -->
+    <!-- Setting -->
+    <link rel="stylesheet" href="style/settings/wrapper.css" />
+    <link rel="stylesheet" href="style/settings/core.css" />
+    <link rel="stylesheet" href="style/settings/color.css" />
+    <link rel="stylesheet" href="style/settings/text.css" />
+
+    <!-- Generic -->
+    <link rel="stylesheet" href="style/generic/reset.css" />
+    <link rel="stylesheet" href="style/generic/box-sizing.css" />
+
+    <!-- Base-->
+    <link rel="stylesheet" href="style/base/html.css" />
+
+    <!-- Objects -->
+    <link rel="stylesheet" href="style/objects/fd-wraper.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="style/components/fd-button.css" />
+    <link rel="stylesheet" href="style/components/fd-input.css" />
+    <link rel="stylesheet" href="style/components/fd-header.css" />
+    <!-- Pages -->
+    <link rel="stylesheet" href="style/pages/project-create-edit.css" />
+    <!-- Trumps -->
+
+    <!--Script-->
+    <script src="script/project-create-edit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="fd-project-create-edit">
+      <div class="fd-wrapper">
+        <header class="fd-header">
+          <div class="wrapper">
+            <div class="image-wrapper">
+              <img
+                alt="logo"
+                class="image"
+                src="assets/SoftawareDeveloper.png"
+              />
+            </div>
+          </div>
+        </header>
+
+        <main class="main-content">
+          <form
+            class="left"
+            onsubmit="createOrEdit()"
+            action="javascript:void(0)"
+          >
+            <h1 class="main-title" id="main-title"></h1>
+            <div class="action-creat">
+              <a class="bi bi-arrow-left-square-fill" href="list.html"></a>
+            </div>
+
+            <input requerid id="title" class="fd-input" placeholder="Título" />
+            <input
+              requerid
+              id="totalCost"
+              class="fd-input"
+              placeholder="Custo Total"
+            />
+            <textarea
+              requerid
+              id="description"
+              class="fd-input"
+              placeholder="Descrição"
+            ></textarea>
+
+            <button type="submit" class="fd-button" id="action-button"></button>
+          </form>
+
+          <div class="right">
+            <img class="imagelateral" src="assets/create.png" />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

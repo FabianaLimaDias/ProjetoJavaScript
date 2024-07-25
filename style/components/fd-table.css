@@ -1,0 +1,76 @@
+.fd-table {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  background-color: white;
+}
+
+/*head*/
+
+.fd-table > .head {
+  font-family: var(--fd-font-size-base);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fd-color-gray-light);
+  padding: 8px;
+}
+
+.fd-table > .head > .row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 200px;
+  padding: 8px 0;
+  margin-left: 30px;
+}
+
+/* Body*/
+.fd-table > .body {
+  font-family: var(--fd-font-size-base);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.fd-table > .body > .row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 200px;
+  padding: 10px 0;
+  margin-left: 30px;
+  border-bottom: 1px solid var(--fd-color-primary-light1);
+}
+
+.fd-table > .body > .row:last-child {
+  border-bottom: none;
+}
+
+/*table-description*/
+
+.fd-table > .body > .row > .title-description {
+}
+
+.fd-table > .body > .row > .title-description > .title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.fd-table > .body > .row > .title-description > .title > .description {
+}
+
+/*body-value*/
+.fd-table > .body > .row > .value {
+  font-family: "Roboto", sans-serif;
+}
+
+/*actions*/
+
+.fd-table > .body > .row > .actions {
+}
+
+.fd-table > .body > .row > .actions > .edit {
+  color: var(--fd-color-primary);
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.fd-table > .body > .row > .actions > .delete {
+  color: var(--fd-color-danger);
+  margin-right: 7px;
+  cursor: pointer;
+}

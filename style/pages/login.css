@@ -1,0 +1,45 @@
+.fd-login > .fd-wrapper > .main-content > .left {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .radio-buttons {
+  margin-right: 42px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .radio-buttons > .title {
+  font-size: var(--fd-font-tamanho);
+  font-family: var(--fd-font-size-base);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .radio-buttons > .fd-radio {
+  margin-right: 70px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .main-title {
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .main-title > .up {
+  font-family: var(--fd-font-size-base);
+  font-size: calc(var(--fd-font-tamanho) + 20px);
+  display: block;
+  margin-top: 20px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .main-tile > .down {
+  font-size: calc(var(--fd-font-tamanho) + 2px);
+  margin-bottom: 50px;
+}
+
+.fd-login > .fd-wrapper > .main-content > .left > .steps {
+  display: block;
+  font-weight: 800;
+  color: var(--fd-color-gray);
+  font-family: var (--fd-font-size-base);
+  margin-bottom: 7pxs;
+  font-size: 10px;
+}

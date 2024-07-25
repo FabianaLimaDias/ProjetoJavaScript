@@ -1,0 +1,20 @@
+.fd-input {
+  font-family: var(--fd-font-size-base);
+  font-size: var(--fd-font-tamanho);
+  border: none;
+  background: none;
+  border-bottom: 1px solid var(--fd-color-gray-lighter);
+  outline: none;
+  transition: border-color 10s;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fd-input:focus {
+  border-color: var(--fd-color-gray);
+}
+
+.fd-input::placeholder {
+  color: var(--fd-color-gray-dark);
+}

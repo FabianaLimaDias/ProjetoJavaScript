@@ -1,0 +1,6 @@
+/*Classes bases (sem nenhum tipo de class) ou H1..*/
+html {
+  background-color: var(--fd-color-gray-lighter);
+  font-family: var(--font-family-base);
+  font: weight 500;
+}

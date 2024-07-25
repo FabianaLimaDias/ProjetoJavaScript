@@ -1,0 +1,26 @@
+.fd-button {
+  background-color: var(--fd-color-primary);
+  color: white;
+  font-family: var(--fd-font-size-base);
+  font-size: calc(var(--fd-font-tamanho) + 1px);
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.fd-button.-small {
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.fd-button:hover {
+  background-color: var(--fd-color-primary-light);
+}

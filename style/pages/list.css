@@ -1,0 +1,21 @@
+.fd-list > .fd-wrapper > .main-content > .title-button {
+  font-family: var(--fd-font-size-base);
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.fd-list > .fd-wrapper > .main-content > .title-button > .title {
+  font-family: var(--fd-font-size-base);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.fd-list > .fd-wrapper > .main-content > .title-button > .button-wrapper {
+}
+
+.fd-list > .fd-wrapper > .main-content > .table-wrapper {
+  margin-top: 32px;
+}
